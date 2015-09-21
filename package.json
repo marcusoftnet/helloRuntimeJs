@@ -1,0 +1,23 @@
+{
+  "name": "helloruntimejs",
+  "version": "1.0.0",
+  "description": "A small Koa site to be run with runtimejs",
+  "main": "index.js",
+  "scripts": {
+    "image:create": "runtimeify index.js -o appImg",
+    "image:start": "runtime-qemu ./appImg",
+    "start": "npm run image:create && npm run image:start"
+  },
+  "author": "Marcus Hammarberg @marcusofnet",
+  "license": "MIT",
+  "devDependencies": {
+    "koa": "^1.0.0",
+    "runtime-tools": "^1.4.0",
+    "runtimeify": "^1.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.10.0",
+    "co-fs": "^1.2.0",
+    "runtimejs": "^0.1.25"
+  }
+}
