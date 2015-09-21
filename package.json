@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A small Koa site to be run with runtimejs",
   "main": "index.js",
+  "repository": "https://github.com/marcusoftnet/helloRuntimeJs",
+  "bugs": "https://github.com/marcusoftnet/helloRuntimeJs/issues",
   "scripts": {
     "image:create": "runtimeify index.js -o appImg",
     "image:start": "runtime-qemu ./appImg",
@@ -19,5 +21,8 @@
     "bluebird": "^2.10.0",
     "co-fs": "^1.2.0",
     "runtimejs": "^0.1.25"
+  },
+  "engines": {
+    "node": "4.0.0"
   }
 }
