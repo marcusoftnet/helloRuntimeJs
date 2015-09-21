@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "bluebird": "^2.10.0",
-    "co-fs": "^1.2.0",
     "runtimejs": "^0.1.25"
   },
   "engines": {
